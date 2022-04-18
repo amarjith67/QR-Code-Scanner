@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;600;900&display=swap');
+/* .preview{
+    margin-top: 30%;
+    margin-left: 30%;
+    box-shadow: 1px 4px 30px navy;
+    border-radius: 10px;
+    border: .5px;
+}
+.container{
+  
+    margin : 0% !important;
+    margin-right: 0px !important;
+
+}
+.main {
+    margin: 0% !important;
+    text-align: center;
+  }
+
+#text{
+    
+    width: 300px;
+    height: 50px;
+   margin-top: 70%;
+   margin-left: 55%;
+   margin-right: 10%;
+   box-shadow: 1px 1px 14px blue;
+   border:10px;
+
+    
+}
+.body{
+    margin: 0px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.neon {
+    color: #D0F8FF;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+     font-size: 50px;
+     align-content: center;
+     margin-left: 30%;
+     justify-content: center;
+     width: 100%;
+             
+} */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #d4e9fa;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .main{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #ecf7ff;
+    margin:auto;
+    height: 85%;
+    width: 100%;
+    border: 15px solid #ffffff;
+    border-radius: 5rem 5rem 5rem 5rem;
+  
+}
+
+.container .circle1{
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: -10%;
+    height: 80%;
+    width: 37%;
+    background-color: #00288a;
+    border-radius: 99999px;
+}
+
+.container .circle2{
+    position: absolute;
+    right: -2%;
+    bottom: -1%;
+    height: 40%;
+    width: 19%;
+    background-color: #ff9b06;
+    border-radius: 99999px;
+}
+
+.container .circle3{
+    position: absolute;
+    right: -3%;
+    top: 15%;
+    height: 30%;
+    width: 14%;
+    border-radius: 99999px;
+    background-color: #3ebcf9;
+}
+.container .main .camera-container{
+    padding: 2rem;
+    margin: auto;
+    height: 95%;
+    width: 30%;
+    background: #00288a;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+#preview{
+    margin-top: 5%;
+    background: #113a9f;
+    padding: 1rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.container .main .camera-container .qr-container{
+    background: #113a9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 45%;
+    width: 100%;
+    position: relative;
+    bottom: 55%;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+#qr{
+   color: black;
+   height: 90%;
+   width: 77%;
+}
+
+.container .main .text-content{
+    background-color: #00288a;
+    margin: auto;
+    height: fit-content;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 2rem 2rem 2rem 2rem;
+   padding: 6%;
+}
+.container .main .heading{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    color: white;
+}
+.container .main .sub-head{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #26ff2b;
+}
+
+.container .main .form-div #form-id #text{
+    padding: 7%;
+    background-color: #113a9f;
+    border:none !important;
+    border-bottom:5px solid #26ff2b !important;
+}
+.container .main .form-div #form-id #text::-webkit-input-placeholder{
+    font-weight: bold;
+    font-size: larger;
+    color:#3ebcf9 !important;
+}
+
+.container .main .text-content .text-overlay{
+    padding: 12%;
+    background-color: #113a9f;
+    border-radius: 2rem;
+}
+
+/* scanner animation bar code */
+
+.container .main .camera-container .ocrloader {
+    width:350px;
+    height:250px;
+    margin:20px;
+    outline-offset:10px;
+    position:relative;
+    right: 16%;
+    bottom: 54%;
+  }
+  
+  .container .main .camera-container .ocrloader span::before {
+    content:"";
+    position:absolute;
+    top:5%;
+    bottom:0;
+    left:4%;
+    width:10px;
+    height: 90%;
+    background:greenyellow;
+    box-shadow:0 0 50px 10px #18c89b;
+    clip-path:inset(0);
+    animation:
+      x 1s ease-in-out infinite alternate,
+      y 1s   ease-in-out infinite;
+  }
+  
+  .container .main .camera-container .ocrloader p::before {
+    content: '';
+    display:inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    right: 4px;
+  }
+  
+  .container .main .camera-container .ocrloader p {
+    color: red;
+    position: absolute;
+    bottom: -30px;
+    left: 38%;
+    font-size: 16px;
+    font-weight: 600;
+    animation: blinker 1s linear infinite;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .container .main .camera-container .ocrloader:before,
+  .container .main .camera-container .ocrloader:after,
+  .container .main .camera-container .ocrloader em:after,
+  .container .main .camera-container .ocrloader em:before {
+    border-color: rgb(220, 14, 14);
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 46px;
+    border-style: solid;
+    border-width: 0px;
+  }
+  
+  .container .main .camera-container .ocrloader:before {
+    left: 0;
+    top: 0;
+    border-left-width: 5px;
+    border-top-width: 5px;
+    border-radius: 5px 0 0 0;
+  }
+  
+  .container .main .camera-container .ocrloader:after {
+    right: 0;
+    top: 0;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-radius: 0 5px 0 0;
+  }
+  .container .main .camera-container .ocrloader em:before {
+    left: 0;
+    bottom: 0;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+    border-radius: 0 0 0 5px;
+  }
+  .container .main .camera-container .ocrloader em:after {
+    right: 0;
+    bottom: 0;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-radius: 0 0 5px 0;
+  }
+  
+  @keyframes move {
+    0%,
+    100% {
+      transform: translateY(190px);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+    75% {
+      transform: translateY(160px);
+    }
+  }
+  
+  @keyframes blinker {  
+    50% { opacity: 0; }
+  }
+  
+  @keyframes x {
+    to {
+      transform:translateX(-100%);
+      left:100%;
+    }
+  }
+  
+  @keyframes y {
+     33% {
+       clip-path:inset(0 0 0 -100px);    
+     }
+     50% {
+       clip-path:inset(0 0 0 0);    
+     }
+     83%{
+       clip-path:inset(0 -100px 0 0); 
+     }
+    
+  }
+  
+  /* ------------------- */
+  /* user display section */
+  
+  
+  .card-wrapper {
+    width: 320px;
+    border: 2px solid #D8DDE5;
+    border-radius: 10px;
+    box-shadow: #d8dde5 0px 0px 2px;
+    overflow: hidden;
+    float: left;
+    margin: 0 15px 15px;
+  }
+  
+  .card-wrapper__bg {
+    height: 100px;
+    background: blue;
+    background-position: 100% 100%;
+    position: relative;
+    
+  }
+  
+  .card-wrapper__cover-bg {
+    height: 100%;
+    text-align: center;
+  }
+    img {
+      height: 100%;
+    }
+  
+  
+  .card-wrapper__profile-pic {
+    position: absolute;
+    width: 100px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: 30px;
+    overflow: hidden;
+    padding: 10px;
+  }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  
+  
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .card-wrapper__details {
+    padding-top: 65px;
+    padding-bottom: 20px;
+  }
+  
+  .card-wrapper__user-name p {
+    color: #1085E0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 26px;
+  }
+  
+  .card-wrapper__user-detail {
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .card-wrapper__user-contact-info {
+    padding-top: 20px;
+  }
+    .card-wrapper__user-contact-info-label {
+      font-size: 16px;
+      color: black;
+      font-weight: 600;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    .card-wrapper__user-contact-info-value,
+    .card-wrapper__user-contact-info-value a{
+      font-size: 18px;
+      color: #000;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+    }
+ .container .main #but{
+     margin-left: 37%;
+     padding: 10px 24px;
+ }
