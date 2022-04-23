@@ -6,7 +6,9 @@
     <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css"  type="text/css">
+    <script rel="text/javascript"  src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css"  type="text/css">
+    
 </head>
 <body>
     <div class="container">
@@ -40,29 +42,13 @@
                   </div>
         
                 <div class="qr-container  col-md-6 col-sm-6">
-                    <img src="qr2.png" id="qr" alt="">
+                    <img src="/assets/qr.png" id="qr" alt="">
                 </div>
             </div>
 
         </div>
     </div>
-    <script>
-        let scanner = new Instascan.Scanner({video: document.getElementById('preview')});
-        Instascan.Camera.getCameras().then(function(cameras){
-            if(cameras.length > 0){
-                scanner.start(cameras[0]);
-            } else{
-                alert('No cameras found!');
-            }
-        }).catch(function(e){
-            console.error(e);
-        });
-
-        scanner.addListener('scan',function(c){
-            document.getElementById('text').value=c;
-            document.forms[0].submit();
-        });
-    </script>
+    
 </body>
 </html>
 </html>
