@@ -404,6 +404,8 @@ body{
       text-decoration: none;
     }
  .container .main #but{
+   margin-top: -4%;
      margin-left: 37%;
-     padding: 10px 24px;
+     padding: 8px 24px;
+      margin-bottom: 2%; 
  }
