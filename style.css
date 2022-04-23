@@ -115,7 +115,7 @@ body{
 }
 
 #preview{
-    margin-top: 2%;
+    
     background: #113a9f;
     padding: 1rem;
     border-radius: 2rem 2rem 2rem 2rem;
@@ -146,7 +146,7 @@ body{
     box-sizing: border-box;
     border: 2px solid white;
     border-radius: 2rem 2rem 2rem 2rem;
-   padding: 6%;
+   padding: 5%;
 }
 .container .main .heading{
     font-family: 'Nunito Sans', sans-serif;
@@ -188,7 +188,7 @@ body{
     outline-offset:10px;
     position:relative;
     right: 16%;
-    bottom: 58%;
+    bottom: 57.5%;
   }
   
   .container .main .camera-container .ocrloader span::before {
