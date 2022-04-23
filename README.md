@@ -6,7 +6,7 @@
 
 - [Repo](https://github.com/amarjith67/QR-Code-Scanner "QR Code Scanner Repo")
 
-- [Bugs]( "Issues Page")
+- [Bugs](https://github.com/amarjith67/QR-Code-Scanner/issues "Issues Page")
 
 
 ## Built With
