@@ -15,6 +15,7 @@
 - Php
 - HTML
 - CSS
+- My SQL Server
 
 ## Future Updates
 
